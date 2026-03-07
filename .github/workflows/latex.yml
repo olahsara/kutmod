@@ -24,7 +24,9 @@ jobs:
       - name: Prepare site
         run: |
           mkdir public
-          cp main.pdf public/index.pdf
+          cp main.pdf public/main.pdf
+          cp index.html public/index.html 
+          cp style.css public/style.css
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
