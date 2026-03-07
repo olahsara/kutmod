@@ -34,15 +34,15 @@ A kísérletünk során az alábbi hipotéziseket (H1-H8) teszteljük, amelyek a
 
 A cikk megírását és a kutatás lebonyolítását három fő tematikus felelősségi kör mentén osztottuk fel a logikai koherencia biztosítása érdekében:
 
-**1. Szerző: Az Elméleti Szakértő**
+**1. Szerző**
 *   **Felelősség:** A Bevezetés és a Szakirodalmi áttekintés fejezetek megírása.
 *   **Feladatok:** A "vibe coding" és a paradigmaváltás bemutatása, a kutatási probléma megalapozása, valamint a *Cognitive Offloading* (kognitív tehermentesítés) és az *Illusion of Competence* (illuzórikus kompetencia) elméleti hátterének kidolgozása.
 
-**2. Szerző: A Módszertanos és Adatelemző**
+**2. Szerző**
 *   **Felelősség:** A Módszertan és az Eredmények (Hipotézisek elemzése) fejezetek megírása.
 *   **Feladatok:** A kísérleti beállítás (szándékos hiba) dokumentálása, a metrikák (Persistence, Latency to Manual Shift, Frusztrációs skála) definíciója, és a kinyert adatok statisztikai bemutatása a hipotézisek klaszterei mentén.
 
-**Krémer Aliz A Szintetizáló és Edukációs Szakértő**
+**Krémer Aliz**
 *   **Felelősség:** A Diszkusszió és a Konklúzió fejezetek megírása.
 *   **Feladatok:** Az eredmények szakmai interpretálása (pl. statisztikai valószínűség vs. kauzalitás a debugolásban), a pedagógiai javaslatok (pl. AI-free alapozó szakaszok) megfogalmazása, és az "üvegplafon" effektus összegzése.
 
