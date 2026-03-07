@@ -1,0 +1,20 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+(Vázlat)
+
+4.1. Kísérleti setup: A „szándékos hiba”
+\begin{itemize}
+    \item A feladat: Egy egyszerű API integráció, ahol egy elavult könyvtárverzió miatt a „hallucinált” vagy generált kód futásidejű hibát eredményez.
+    \item A hiba jellege: Nem szintaktikai, hanem logikai/környezeti, amit az AI nem lát át közvetlen kontextus nélkül.
+\end{itemize}
+
+4.2. Mért változók és mérőszámok
+\begin{itemize}
+    \item Persistence metrika: Hány egymást követő promptot küld a felhasználó anélkül, hogy manuálisan módosítaná a kódot vagy elolvasná a dokumentációt.
+    \item Latency to Manual Shift: Az az idő, ami eltelik az első hibaüzenet és az első manuális debug-lépés (pl. console.log vagy debugger használata) között.
+    \item Frusztrációs skála: Likert-skálás kérdőív a „trial-and-error loop” okozta stressz mérésére.
+\end{itemize}
+
+\end{document}
