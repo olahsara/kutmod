@@ -34,7 +34,7 @@ A kísérletünk során az alábbi hipotéziseket (H1-H8) teszteljük, amelyek a
 
 A cikk megírását és a kutatás lebonyolítását három fő tematikus felelősségi kör mentén osztottuk fel a logikai koherencia biztosítása érdekében:
 
-**1. Szerző**
+**Oláh Sára**
 *   **Felelősség:** A Bevezetés és a Szakirodalmi áttekintés fejezetek megírása.
 *   **Feladatok:** A "vibe coding" és a paradigmaváltás bemutatása, a kutatási probléma megalapozása, valamint a *Cognitive Offloading* (kognitív tehermentesítés) és az *Illusion of Competence* (illuzórikus kompetencia) elméleti hátterének kidolgozása.
 
