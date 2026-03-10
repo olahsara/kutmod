@@ -4,12 +4,19 @@
 % customize section and subsection style %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\thesection}{\Roman{section}} % section with roman numbers
+% SECTION -> 1
 \titleformat{\section}%
-  {\centering\uppercase}{\thesection}{10pt}\textbf{{}}
+  {\large\bfseries}   % méret + félkövér
+  {\thesection}       % számozás
+  {0.5em}             % távolság
+  {}
 
-
-\renewcommand{\thesubsection}{\Alph{subsection}} % subsection with letters
+% SUBSECTION -> 1.1
+\titleformat{\subsection}%
+  {\normalsize\bfseries}
+  {\thesubsection}
+  {0.5em}
+  {}
 
 \newcommand{\ts}{\textsuperscript} %sobrescrito 
 
