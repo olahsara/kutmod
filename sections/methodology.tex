@@ -5,6 +5,7 @@
 The primary objective of our research was to empirically investigate the impact of "vibe coding"—AI-assisted development 
 driven by natural language prompts—on novice programmers. We employed a controlled, observational experimental design 
 supplemented by think-aloud protocols and screen tracking to analyze the dynamics of code generation and debugging.
+\cite{prather2018metacognitive} \cite{prather2024widening}
 
 \subsection{Experimental Setup: The Deliberate Error}
 The core of the experiment revolved around a programming task requiring a simple API integration. However, we introduced 
@@ -13,16 +14,13 @@ The rationale behind this setup is that any syntactically correct code "hallucin
 The nature of the bug was not a simple syntax typo—which would fall under "extraneous load" and be easily fixed by the 
 AI — but rather a logical/environmental error that the AI could not resolve automatically without full knowledge of the local context. This specific constraint was designed to force the developer out of their reliance on the AI and compel them to initiate manual debugging using their own mental model.
 
-\begin{itemize}
-    \item A feladat: Egy egyszerű API integráció, ahol egy elavult könyvtárverzió miatt a „hallucinált” vagy generált kód futásidejű hibát eredményez.
-    \item A hiba jellege: Nem szintaktikai, hanem logikai/környezeti, amit az AI nem lát át közvetlen kontextus nélkül.
-\end{itemize}
+\subsection{Measured Variables and Metrics}
 
-4.2. Mért változók és mérőszámok
-\begin{itemize}
-    \item Persistence metrika: Hány egymást követő promptot küld a felhasználó anélkül, hogy manuálisan módosítaná a kódot vagy elolvasná a dokumentációt.
-    \item Latency to Manual Shift: Az az idő, ami eltelik az első hibaüzenet és az első manuális debug-lépés (pl. console.log vagy debugger használata) között.
-    \item Frusztrációs skála: Likert-skálás kérdőív a „trial-and-error loop” okozta stressz mérésére.
-\end{itemize}
+To quantify the participants' cognitive processes and their interactions with the AI, we defined three primary metrics:
+\begin{enumerate}
+    \item \textbf{Persistence Metric}: This measures the number of consecutive prompts a student sends to the AI to resolve the exact same error, without manually modifying the code or consulting external documentation. This metric quantifies the "Iterative AI Debugging" behavior pattern, which represents an extreme form of passive cognitive offloading. \cite{shen2026how}
+    \item \textbf{Latency to Manual Shift}: The time elapsed (measured in seconds) between the appearance of the first runtime error message and the student's first meaningful manual debugging action (e.g., utilizing console.log, starting a debugger, or rewriting code logic).
+    \item \textbf{Frustration Scale}: A multi-dimensional Likert-scale questionnaire administered upon task completion. It measures the stress, cognitive dissonance, and the collapse of the "illusion of competence" experienced during the trial-and-error loop. \cite{prather2024widening}
+\end{enumerate}
 
 \end{document}
