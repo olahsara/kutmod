@@ -1,18 +1,35 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-(Vázlat)
 
-3.1. Cognitive Offloading a szoftverfejlesztésben
-\begin{itemize}
-    \item A külső memória és az intelligens ágensek használata a munkamemória tehermentesítésére.
-    \item A Cognitive Load Theory (Sweller) alkalmazása: az „extraneous load” (szintaktika) csökkenése vajon növeli-e a „germane load”-ot (mély megértés)?
-\end{itemize}
+\subsection{Cognitive Offloading and the Erosion of Skill Formation}
+The phenomenon of delegating cognitive processes to external tools to reduce mental effort is known in psychology as cognitive offloading. In the context of programming education, AI code generators theoretically reduce extraneous load, allowing learners to focus on higher-level algorithmic problem-solving. However, recent empirical studies suggest a contrary outcome. Relying heavily on AI to complete tasks quickly often comes at the cost of real skill development, particularly for junior developers who fail to remain cognitively engaged.
+Because students use AI as a shortcut, they bypass the explicit learning phase, which impairs their conceptual understanding and code reading abilities (supporting H1).
+Furthermore, novices using Generative AI frequently skip crucial problem-solving planning stages and jump straight into implementation, a metacognitive difficulty identified as "Location",
+which is exacerbated by AI tools that entice them.
+\cite{shen2026how}, \cite{prather2024widening}
 
-3.2. Az „Illusion of Competence” és a „Mental Models”
-\begin{itemize}
-    \item A Dunning-Kruger hatás felerősödése AI környezetben.
-    \item A mentális modellek (Mental Models) hiánya: a fejlesztő nem rendelkezik belső reprezentációval a kód futási állapotáról.
-\end{itemize}
+\subsection{The Illusion of Competence and Metacognitive Difficulties}
+This superficial engagement fosters a dangerous false sense of security. Novice programmers often lack the metacognitive awareness and mental models required to evaluate the code they generate.
+When working with Generative AI, struggling students frequently experience cognitive dissonance and maintain an unwarranted "illusion of competence" because the tool gives them a false sense of progress.
+Prather et al. identified specific novel metacognitive difficulties arising from AI use, such as "Progression," where students are conceptually behind in the course material but remain unaware of it due to their false confidence in the generated output.
+Additionally, students often face the "Mislead" difficulty, where the AI leads them down the wrong path, and they blindly follow because they accept suggestions without critical evaluation (supporting H2 and H4).
+\cite{prather2024widening}
+
+\subsection{Vibe Coding, "House of Cards" Architecture, and Prompt-Looping}
+These cognitive deficiencies culminate in the emerging practice of "vibe coding". While this intent-based approach accelerates initial development, it frequently produces what industry experts call "house of cards code"—implementations that function superficially but harbor critical deficiencies in error handling, performance optimization, and logic.
+Because novices assemble these disjointed AI responses without a holistic architectural understanding, the result is a fragile and inconsistent "patchwork codebase".
+When this codebase inevitably fails or produces logical errors, novices are unequipped to debug it. They lack fundamental debugging skills, leading to a significant gap in performance specifically related to troubleshooting.
+Instead of pausing to systematically trace the logic, students experience the "Interruption" difficulty—an inability to concentrate on problem-solving due to frequent and sometimes unhelpful AI code suggestions.
+Consequently, they fall into the "prompt-looping" anti-pattern, repeatedly throwing errors back at the AI or randomly modifying prompts without manually reading the codebase (supporting H3, H5, and H6).
+\cite{maes2025gotchas}, \cite{shen2026how}, \cite{prather2024widening}
+
+\subsection{The Competence Gap and Classical Quality Assurance}
+Ultimately, the integration of generative AI in programming widens the digital divide among learners.
+While weaker students exhibit severe over-reliance and premature abandonment, skilled programmers interact with AI fundamentally differently. Participants with higher grades and higher self-efficacy are significantly less likely to experience GenAI-induced metacognitive difficulties.
+Research by Kusper et al. on Hungarian informatics students further demonstrates this skill-based divide: better programmers evaluate AI-generated code much more critically.
+Higher-competence students consistently maintain classical quality assurance behaviors—they actively review, debug, and strive to understand the underlying mechanics of AI-generated code before executing it.
+This highlights that foundational skills are prerequisites for successfully transitioning from AI-assisted generation to manual debugging, preventing the debugging paradox (supporting H7 and H8).
+\cite{prather2024widening}, \cite{kusper2025we}
 
 \end{document}
