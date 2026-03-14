@@ -1,23 +1,34 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-(Vázlat)
 
-6. Diszkusszió (Discussion)
-6.1. A „Patchwork Architecture” veszélyei
-\begin{itemize}
-    \item A szoftver nem egy koherens egész, hanem egymáshoz „ragasztott” AI-válaszok összessége. Ez karbantarthatatlan kódbázishoz vezet.
-\end{itemize}
+\subsection{The Dangers of "Patchwork Architecture"}
 
-6.2. A „Vibe Debugging” korlátai
-\begin{itemize}
-    \item A debugolás során a fejlesztő nem a logika, hanem a „vibe” (hasonlóság) alapján próbálja javítani a kódot, ami a statisztikai valószínűségre épít a kauzalitás helyett.
-\end{itemize}
+One of the most pressing technical concerns in the vibe coding paradigm is the emergence of what we term "patchwork architecture." Unlike traditional software development, where a lead architect maintains a holistic mental model of the system's design patterns, AI-assisted development often proceeds through iterative, localized code generation snippets. As noted by Maes \cite{maes2025gotchas}, while LLMs excel at generating self-contained functions or modules, they frequently lack the capacity to maintain global architectural coherence across a large-scale codebase.
 
-6.3. Pedagógiai javaslatok
+This leads to the "glue code" problem, where the developer spends more time attempting to reconcile disparate AI-generated snippets than designing the system itself. These snippets may use inconsistent naming conventions, conflicting state management patterns, or redundant data structures. The resulting technical debt is not merely a collection of poorly written lines of code, but a fundamental decay of system design intent. When developers rely on the "vibe" of a prompt to generate infrastructure, the underlying structural integrity is often sacrificed for immediate functional gratification. This patchwork approach creates brittle systems where a single change in a local module can have unpredictable cascading effects due to the lack of a standardized architectural foundation. \cite{prather2024widening}
+
+\subsection{Limitations of "Vibe Debugging"}
+
+The shift in development also necessitates a shift in debugging. Traditional debugging is a causal process: the developer follows the logic of the program, examines state transitions, and identifies the exact point where the actual behavior diverges from the intended logic. In contrast, "vibe debugging" is predominantly statistical. When a system fails, the developer provides the error message to the LLM and asks for a fix, effectively relying on the model's ability to pattern-match the error against its training data.
+
+While this approach is remarkably efficient for common syntax errors or standard API misuses, it fails catastrophically in edge cases or complex logic traps. As Gama et al. \cite{gama2025can} observe, the "vibes" based approach often leads to a trial-and-error loop where the developer applies suggested fixes without understanding the underlying cause of the bug. This creates a dangerous reliance on statistical probability rather than logical certainty. Furthermore, researchers have highlighted that this over-reliance can lead to a decrease in the developer's own metacognitive awareness. \cite{tankelevitch2024metacognitive} If the LLM’s context window is insufficient to capture the relevant dependencies, or if the bug lies in a domain-specific logic that deviates from common patterns, the vibe debugger is left without a path forward, often resulting in a series of "hallucinated" fixes that further obscure the original issue.
+
+\subsection{Pedagogical Recommendations}
+
+The integration of AI into the classroom requires a dual-track approach that balances productivity with the preservation of fundamental skills. We propose two primary recommendations for modern informatics education:
+
 \begin{itemize}
-    \item „AI-free” alapozó szakaszok: A debugolási alapok (stack trace olvasás, memory heap elemzés) tanítása AI segítsége nélkül.
-    \item Prompt-kritika: A hallgatóknak nem csak kódot kell generálniuk, hanem meg kell indokolniuk az AI által hozott döntéseket.
+    \item \textbf{AI-Free Fundamental Phases:} 
+          Educators should enforce strictly regulated "AI-free" periods during the early stages of a computer science curriculum. 
+          Students must demonstrate proficiency in manual stack trace analysis, memory heap management, and low-level logical proofs before being introduced to generative tools. 
+          As Becker et al. \cite{becker2023programming} argue, bypassing these fundamentals prevents the development of the mental models necessary for high-level problem-solving.
+    
+    \item \textbf{The "Prompt Critique" Method:} 
+          For assignments where AI use is permitted, the focus should shift from the code output to the rationale behind the input and acceptance. 
+          Students should be required to submit a "prompt critique" report alongside their code. 
+          In this report, they must justify their prompting strategy, explain why they accepted or rejected specific AI suggestions, and provide a manual walkthrough of the generated logic. 
+          This approach ensures that the human remains the primary arbiter of the code's logic, transforming the student from a passive consumer of AI output into a critical editor. \cite{bucinca2021trust}
 \end{itemize}
 
 \end{document}
