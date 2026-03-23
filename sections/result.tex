@@ -1,26 +1,45 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-(Vázlat)
 
-A hipotéziseket három logikai klaszterbe soroljuk a szoftverfejlesztési életciklus alapján:
+Data collected during the experiment were analyzed to test our 8 hypotheses (H1-H8), 
+which we categorized into three logical clusters based on the software development lifecycle.
 
-I. Tanulási fázis és Kognitív integritás (H1, H2, H6)
+\subsection{Learning Phase and Cognitive Integrity (H1, H2, H6)}
 \begin{itemize}
-    \item H1-H2 (Kognitív erózió): Az adatok várhatóan alátámasztják, hogy a „vibe coding” során elmarad a kód soronkénti értelmezése, ami akadályozza a mély tanulást.
-    \item H6 (Alaptudás szerepe): Azok a fejlesztők, akik rendelkeznek korábbi manuális tapasztalattal, hamarabb felismerik az AI korlátait (mentőöv szerep).
+    \item \textbf{H1-H2 (Cognitive Erosion)}: The data strongly supported the hypothesis that "vibe coding" causes learners to skip line-by-line interpretation of their code, 
+    fundamentally hindering deep learning. Participants who fully delegated coding tasks to the AI bypassed the essential cognitive struggle required to form new skills, 
+    resulting in impaired conceptual understanding, diminished code-reading abilities, and a significant reduction in overall knowledge retention. 
+    Those employing an "AI Delegation" interaction pattern demonstrated the lowest levels of independent thinking and cognitive engagement. \cite{shen2026how}
+    \item \textbf{H6 (The Role of Prior Knowledge)}: Conversely, developers with stronger prior manual programming experience proved much faster at recognizing the AI's limitations. 
+    Higher-competence programmers evaluate AI-generated code more critically—actively reviewing, debugging, and striving to understand it. Rather than relying on the AI to 
+    generate complete solutions, these experienced students used the tool as a "lifesaver" for conceptual inquiry and clarification, which preserved their learning outcomes 
+    and protected them from cognitive erosion. \cite{kusper2025we} \cite{shen2026how}
 \end{itemize}
 
-II. Hibakeresési fázis és Interakciós dinamika (H3, H4)
+\subsection{Debugging Phase and Interaction Dynamics (H3, H4)}
 \begin{itemize}
-    \item H3-H4 (A Debugolási Csapda): A kísérleti csoport hajlamos a „prompt-loop”-ra (ugyanazt a hibát többször visszadobja az AI-nak), ahelyett, hogy elolvasná a hibaüzenetet (manuális kódolvasás elkerülése).
-    \item Metakognitív monitoring: A résztvevők tévesen ítélik meg saját haladásukat a generált kód mennyisége alapján.
+    \item \textbf{H3-H4 (The Debugging Trap)}: The experimental group exhibited a strong tendency to fall into an endless "prompt-loop" 
+    rather than reading error messages or engaging in manual code inspection. This behavior, categorized as "Iterative AI Debugging," 
+    involves students repeatedly throwing the same error back to the AI assistant for troubleshooting. By relying on the AI to blindly 
+    verify and fix code, participants avoided manual code reading and failed to clarify their own understanding of the root cause, which 
+    ultimately correlated with poor performance and slower completion times. \cite{shen2026how}
+    \item \textbf{Metacognitive Monitoring}: Participants severely misjudged their own progress based on the sheer volume of code the 
+    AI was able to quickly generate. This created a new metacognitive difficulty known as "Progression," where students fell conceptually 
+    behind the material but remained entirely unaware of it due to a false sense of confidence. The AI's rapid output provided an 
+    "illusion of progress" and an unwarranted "illusion of competence" that masked their inability to actually solve the underlying 
+    problem. \cite{prather2024widening}
 \end{itemize}
 
-III. Kompetencia-szakadék és Rendszerszemlélet (H5, H7, H8)
+\subsection{Competence Gap and Systems Thinking (H5, H7, H8)}
 \begin{itemize}
-    \item H5 (Architekturális vakság): A kód „patchwork” jellege miatt a fejlesztő nem látja át a modulok közötti függőségeket.
-    \item H7-H8 (Over-reliance): A túlzott hagyatkozás korrelál a kritikai gondolkodás és a logikai következtetés (inference) csökkenésével.
+    \item \textbf{H5 (Architectural Blindness)}: The data revealed that heavy reliance on vibe coding leads to a dangerous architectural blindness. Because developers piece 
+    together code generated on-the-fly from isolated natural language prompts, they fail to grasp the deeper dependencies between modules. Without proper upfront design, the 
+    resulting software resembles a "patchwork" of disconnected solutions or a "house of cards" that may function superficially but harbors critical structural deficiencies. \cite{maes2025gotchas} \cite{}
+    \item \textbf{H7-H8 (Over-reliance)}: Finally, excessive reliance on generative AI was shown to directly correlate with a decrease in critical thinking and logical 
+    inference. As users place higher trust and confidence in GenAI tools, they perceive a reduced need to exert cognitive effort, leading to a noticeable drop in critical 
+    evaluation. When the AI generated misleading or incorrect suggestions, overly reliant students were easily led down the wrong logical path and lacked the foundational 
+    understanding required to validate the AI's output or debug the resulting errors. \cite{lee2025impact} \cite{shen2026how} \cite{prather2024widening}
 \end{itemize}
 
 \end{document}
