@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Lifeline or trap? The consequences of "vibe coding" and excessive reliance
-      on AI - Krémer Aliz, Hősi Rezső Rudolf, Oláh Sára
-    </title>
+    <title>Kutatásmódszertan: Tanulmány és Pályázat</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <embed class="pdf-embed" src="main.pdf" type="application/pdf" />
+    <div class="menu">
+      <button onclick="loadPDF('main.pdf')">Tanulmány</button>
+      <button onclick="loadPDF('eu.pdf')">EU pályázat</button>
+    </div>
+
+    <embed
+      id="pdfViewer"
+      class="pdf-embed"
+      src="main.pdf"
+      type="application/pdf"
+    />
 
     <div class="mobile-fallback">
       <h2>Úgy tűnik, mobilon vagy!</h2>
@@ -18,9 +25,16 @@
         A mobilböngészők néha nem tudják közvetlenül az oldalon megjeleníteni a
         PDF-et.
       </p>
-      <a href="main.pdf" target="_blank"
-        >Kattints ide a cikk megnyitásához / letöltéséhez</a
-      >
+      <a id="fallbackLink" href="main.pdf" target="_blank">
+        Kattints ide a cikk megnyitásához / letöltéséhez
+      </a>
     </div>
+
+    <script>
+      function loadPDF(file) {
+        document.getElementById("pdfViewer").src = file;
+        document.getElementById("fallbackLink").href = file;
+      }
+    </script>
   </body>
 </html>
