@@ -16,17 +16,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Compile LaTeX
+      - name: Compile LaTeX - tanulmany
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: tanulmany/main.tex
+          root_file: main.tex
+          working_directory: tanulmany
 
       - name: Prepare site
         run: |
           mkdir public
           cp tanulmany/main.pdf public/main.pdf
-          cp tanulmany/index.html public/index.html 
-          cp tanulmany/style.css public/style.css
+          cp index.html public/index.html 
+          cp style.css public/style.css
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
