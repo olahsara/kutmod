@@ -19,14 +19,14 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
+          root_file: tanulmany/main.tex
 
       - name: Prepare site
         run: |
           mkdir public
-          cp main.pdf public/main.pdf
-          cp index.html public/index.html 
-          cp style.css public/style.css
+          cp tanulmany/main.pdf public/main.pdf
+          cp tanulmany/index.html public/index.html 
+          cp tanulmany/style.css public/style.css
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
