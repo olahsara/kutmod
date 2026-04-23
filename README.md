@@ -2,7 +2,7 @@
 
 Ebben a repositoryban találhatók a 2026 tavaszi féléves Kutatásmódszertan kurzus 3. csoport által készített dokumentumai
 
-🌐 **A hosztolt pdf fájlok elérhető itt:** [https://olahsara.github.io/kutmod/](https://olahsara.github.io/kutmod/)
+🌐 **A hosztolt pdf fájlok elérhetők itt:** [https://olahsara.github.io/kutmod/](https://olahsara.github.io/kutmod/)
 
 ### 👥 Szerzők
 
