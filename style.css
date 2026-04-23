@@ -63,7 +63,7 @@ body {
 
 /* Viewer */
 .viewer {
-  height: 100%;
+  height: calc(100%-80px);
 }
 
 .hidden {
@@ -76,7 +76,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  padding: 1rem 0.5rem;
+  height: 80px;
 
   button {
     padding: 0.5rem 1rem;
