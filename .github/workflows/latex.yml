@@ -22,10 +22,17 @@ jobs:
           root_file: main.tex
           working_directory: tanulmany
 
+      - name: Compile LaTeX - eu palyazat
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: eu.tex
+          working_directory: palyazat
+
       - name: Prepare site
         run: |
           mkdir public
-          cp tanulmany/main.pdf public/main.pdf
+          cp tanulmany/tanulmany.pdf public/tanulmany.pdf
+          cp palyazat/eu.pdf public/eu.pdf
           cp index.html public/index.html 
           cp style.css public/style.css
 
