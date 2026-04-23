@@ -19,7 +19,7 @@ jobs:
       - name: Compile LaTeX - tanulmany
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
+          root_file: tanulmany.tex
           working_directory: tanulmany
 
       - name: Compile LaTeX - eu palyazat
