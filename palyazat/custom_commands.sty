@@ -4,20 +4,26 @@
 % customize section and subsection style %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% SECTION -> 1
+% SECTION -> NO NUMBER
 \titleformat{\section}%
-  {\large\bfseries}   % méret + félkövér
-  {\thesection}       % számozás
-  {0.5em}             % távolság
+  {\large\bfseries}
+  {}                % <- nincs számozás
+  {0pt}
   {}
 
-% SUBSECTION -> 1.1
+% SUBSECTION -> 1, 2, 3...
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
 \titleformat{\subsection}%
   {\normalsize\bfseries}
-  {\thesubsection}
-  {0.5em}
+  {}
+  {0pt}
   {}
 
-\newcommand{\ts}{\textsuperscript} %sobrescrito 
+\newcommand{\ts}{\textsuperscript}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\blocktitle}[1]{\medskip\noindent\textbf{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
