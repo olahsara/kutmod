@@ -6,15 +6,15 @@ Ebben a repositoryban találhatók a 2026 tavaszi féléves Kutatásmódszertan 
 
 ### 👥 Szerzők
 
-- **Krémer Aliz** – a0tyh8@inf.elte.hu
-- **Hősi Rezső Rudolf** – dov7lk@inf.elte.hu
-- **Oláh Sára** – a4mrc6@inf.elte.hu
+- **Krémer Aliz** – <a0tyh8@inf.elte.hu>
+- **Hősi Rezső Rudolf** – <dov7lk@inf.elte.hu>
+- **Oláh Sára** – <a4mrc6@inf.elte.hu>
 
 ### 📖 Tartalom
 
 - Tanulmány: [Lifeline or Trap? The Consequences of 'Vibe Coding' and Excessive Reliance on AI](#tanulmany)
 
-- Európai uniós pályázat: [Digitális örökségvédelem XR technológiákkal](#európai-uniós-pályázat)
+- Európai uniós pályázat: [Virtual-Europe-Path (VEP)](#európai-uniós-pályázat)
 
 ## Tanulmány
 
@@ -66,7 +66,9 @@ _Közös feladatok:_ Az Absztrakt megírása, a LaTeX formázás, a `refs.bib` f
 
 ## Európai uniós pályázat
 
-### Digitális örökségvédelem XR technológiákkal
+### Virtual-Europe-Path (VEP)
+
+_(Digitális örökségvédelem XR technológiákkal)_
 
 A projekt célja a veszélyeztetett vagy kevésbé ismert kulturális örökségek megőrzése és hozzáférhetővé tétele 3D szkennelés, valamint VR/AR technológiák segítségével. A megközelítés lehetővé teszi, hogy a műemlékek digitálisan látogathatóvá váljanak, miközben csökken a tömegturizmus okozta fizikai terhelés.
 
@@ -98,13 +100,8 @@ A projekt révén:
 
 #### Mediterrán régió (Olaszország, Görögország)
 
-_**Sapienza Università di Roma:**_
-
-> Klasszikus régészet és urbanisztikai örökségvédelem
-
-_**Nemzeti Kapodisztriasz Athéni Egyetem**_
-
-> szabadtéri rommezők és klimatikus kockázatok kutatása.
+- **Sapienza Università di Roma:** Klasszikus régészet és urbanisztikai örökségvédelem
+- **Nemzeti Kapodisztriasz Athéni Egyetem** szabadtéri rommezők és klimatikus kockázatok kutatása.
 
 Fő előnyök:
 
@@ -112,20 +109,16 @@ Fő előnyök:
 - tömegturizmus csökkentése VR megoldásokkal
 - közös publikációk és adatbázisok
 
-#### Kelet-Közép-Európa (Magyarország, Románia)
+#### Kelet-Közép-Európa (Magyarország, Románia) - _ELTE BTK_
 
 > veszélyeztetett kastélyok, kúriák és fatemplomok
-
-_**ELTE BTK**_
 
 - digitális régészet,
 - AI-alapú örökségfeldolgozás
 
-#### Atlanti-parti régió (Franciaország, Írország)
+#### Atlanti-parti régió (Franciaország, Írország) - _Sorbonne Université_
 
 > erődítmények és erózió által veszélyeztetett helyszínek
-
-_**Sorbonne Université**_
 
 - adatgyűjtési és módszertani koordináció
 
