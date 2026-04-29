@@ -1,6 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   background: rgb(60, 60, 60);
+  margin: 0pt;
 }
 
 .home {
@@ -77,6 +78,7 @@ body {
   align-items: center;
   gap: 15px;
   height: 80px;
+  margin: 0px 16px;
 
   button {
     padding: 0.5rem 1rem;
