@@ -4,19 +4,12 @@
 % customize section and subsection style %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% SECTION -> NO NUMBER
+% SECTION -> 0, 1, 2, 3...
+\renewcommand{\thesection}{\arabic{section}}
+
 \titleformat{\section}%
   {\large\bfseries}
-  {}                % <- nincs számozás
-  {0pt}
-  {}
-
-% SUBSECTION -> 1, 2, 3...
-\renewcommand{\thesubsection}{\arabic{subsection}}
-
-\titleformat{\subsection}%
-  {\normalsize\bfseries}
-  {\thesubsection}
+  {\thesection}         
   {0.5em}
   {}
 

@@ -2,7 +2,6 @@
 
 \usepackage{lmodern}
 \usepackage[english]{babel}
-\usepackage{geometry}
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{xurl}
@@ -10,9 +9,14 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{fancyhdr}
-
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{float} % A [H] pozicionáláshoz
 \usepackage{custom_commands} % custom commands
 
+\setlength{\parindent}{0pt}
 
 \geometry{
     a4paper,
@@ -48,6 +52,7 @@
 % Document
 %%%%%%%%%%%%%%%%%
 \begin{document}
+\setcounter{section}{-1} 
 
 %%%%%%%%%%%%%%%%%
 % TITLE PAGE
