@@ -2,18 +2,21 @@
 
 \usepackage{lmodern}
 \usepackage[english]{babel}
-\usepackage{geometry}
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{xurl}
-\usepackage{indentfirst}
 \usepackage{subfiles}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{fancyhdr}
-
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{float} % A [H] pozicionáláshoz
 \usepackage{custom_commands} % custom commands
 
+\setlength{\parindent}{0pt}
 
 \geometry{
     a4paper,
@@ -31,7 +34,7 @@
 \hypersetup{
     colorlinks=true,
     urlcolor=blue,
-    linkcolor=blue,
+    linkcolor=black,
     citecolor=blue,
     pdftitle={EU Proposal – Digital Heritage XR Project},
     pdfauthor={Krémer Aliz, Hősi Rezső Rudolf, Oláh Sára}
@@ -49,6 +52,7 @@
 % Document
 %%%%%%%%%%%%%%%%%
 \begin{document}
+\setcounter{section}{-1} 
 
 %%%%%%%%%%%%%%%%%
 % TITLE PAGE
@@ -66,94 +70,99 @@
 
 \vspace{1em}
 
+% --- TARTALOMJEGYZÉK HELYE ---
+\renewcommand{\contentsname}{Table of Contents} % Vagy a sablon szerinti cím
+\tableofcontents
+\newpage
+% -----------------------------
+
 %%%%%%%%%%%%%%%%%
 % 0. EXECUTIVE SUMMARY
 %%%%%%%%%%%%%%%%%
-\section{Executive Summary}
+\section{EXECUTIVE SUMMARY OF THE PROPOSAL} 
 \subfile{sections/abstract}
 
 %%%%%%%%%%%%%%%%%
 % 1. TECHNICAL AND SCIENTIFIC DESCRIPTION
 %%%%%%%%%%%%%%%%%
-\section{Technical and Scientific Description of the Project}
+\section{TECHNICAL AND SCIENTIFIC DESCRIPTION OF THE PROJECT} 
 
-\subsection{The Project Topic and its Practical Relevance}
+\subsection{THE PROJECT TOPIC AND ITS PRACTICAL RELEVANCE} 
 \subfile{sections/project-summary}
 
-\subsection{Project Contribution Beyond the State of the Art}
+\subsection{PROJECT CONTRIBUTION BEYOND THE STATE OF THE ART} 
 \subfile{sections/state-of-the-art}
 
-\subsection{Project Objectives and Outcomes}
+\subsection{PROJECT OBJECTIVES AND OUTCOMES} 
 \subfile{sections/objectives}
 
-\subsection{Original and Innovative Contributions}
+\subsection{ORIGINAL AND INNOVATIVE CONTRIBUTIONS OF THE PROJECT} 
 \subfile{sections/innovation}
 
-\subsection{Inter-, Multi-, or Trans-disciplinary Characteristics}
+\subsection{INTER-, MULTI-, OR TRANS- DISCIPLINARY CHARACTERISTICS} 
 \subfile{sections/interdisciplinary}
 
 %%%%%%%%%%%%%%%%%
 % 2. IMPACT AND DISSEMINATION
 %%%%%%%%%%%%%%%%%
-\section{Impact and Dissemination of the Project Results}
+\section{IMPACT AND DISSEMINATION OF THE PROJECT RESULTS} 
 
-\subsection{Dissemination and Exploitation}
+\subsection{DISSEMINATION AND EXPLOITATION OF THE PROJECT RESULTS} 
 \subfile{sections/dissemination}
 
-\subsection{Possible Applications with Market Potential}
+\subsection{POSSIBLE APPLICATIONS WITH MARKET POTENTIAL} 
 \subfile{sections/market}
 
-\subsection{Improvements in Quality of Life}
+\subsection{ESTIMATED IMPROVEMENTS IN THE QUALITY OF LIFE, WITH RESPECT TO CURRENT PERFORMANCE OF PRODUCTS, TECHNOLOGIES AND/OR SERVICES} 
 \subfile{sections/impact}
 
-\subsection{Integration in Partner Strategies}
+\subsection{PROJECT INTEGRATION IN THE DEVELOPMENT STRATEGY OF PARTNER COMPANIES} 
 \subfile{sections/strategy}
 
 %%%%%%%%%%%%%%%%%
 % 3. CONSORTIUM
 %%%%%%%%%%%%%%%%%
-\section{Consortium Description}
+\section{CONSORTIUM DESCRIPTION} 
 
-\subsection{Project Director}
+\subsection{PROJECT DIRECTOR} 
 \subfile{sections/director}
 
-\subsection{Consortium Structure}
+\subsection{CONSORTIUM STRUCTURE} 
 \subfile{sections/consortium}
 
-\subsection{Research Team Leaders}
+\subsection{PARTNER RESEARCH TEAM LEADERS} 
 \subfile{sections/team-leaders}
 
-\subsection{Team Structure}
+\subsection{PARTNER TEAM STRUCTURE} 
 \subfile{sections/team-structure}
 
-\subsection{Complementarities and Synergies}
+\subsection{CONSORTIUM COMPLEMENTARITIES AND SYNERGIES BETWEEN PARTNERS} 
 \subfile{sections/synergy}
 
 %%%%%%%%%%%%%%%%%
 % 4. PROJECT MANAGEMENT
 %%%%%%%%%%%%%%%%%
-\section{Project Management}
+\section{PROJECT MANAGEMENT} 
 
-\subsection{Work Plan, Deliverables and Load Balancing}
+\subsection{WORK PLAN, DELIVERABLES AND LOAD BALANCING} 
 \subfile{sections/work-plan}
 
-\subsection{Coordination and Task Schedule}
+\subsection{COORDINATION AND TASK SCHEDULE} 
 \subfile{sections/gantt}
 
-\subsection{Research Infrastructure}
+\subsection{AVAILABLE RESEARCH INFRASTRUCTURE, AND ITS UPGRADE/DEVELOPMENT} 
 \subfile{sections/infrastructure}
 
-\subsection{Manpower Allocation}
+\subsection{MANPOWER ALLOCATION} 
 \subfile{sections/manpower}
 
-\subsection{Budget and Partner Shares}
+\subsection{PROJECT BUDGET AND PARTNERS SHARE} 
 \subfile{sections/budget}
 
 %%%%%%%%%%%%%%%%%
 % 5. REFERENCES
 %%%%%%%%%%%%%%%%%
-\section{References}
-
+\section{REFERENCES} 
 \bibliographystyle{apalike}
 \bibliography{refs}
 
